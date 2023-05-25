@@ -150,6 +150,7 @@ nav ul li {
     margin-bottom: 12px;
  }
  .about-col-2{
+  padding-right: 12px;
     flex-basis: 60%;
  }
  .subtitle {
@@ -497,7 +498,7 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-bottom: 30px;
 }
 .about-col-2{
-  margin: 11px;
+  padding: 10px;
   font-size: 14px;
 }
 .tab-links{
