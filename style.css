@@ -11,8 +11,8 @@ html{
   scroll-behavior: smooth;
 }
 body{
-    background-color:#04141f;
-    color: white;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
 }
 
 
@@ -36,11 +36,12 @@ nav{
     border-radius: 6px;
     font-size: 15px;
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
     transition: background 0.5s;
     border-radius: 12px;}
     .firstbtn:hover{
       background: #00abf0;
+      color: white;
     }
    
 .logo{
@@ -54,7 +55,7 @@ nav ul li {
 
 }
  nav ul li a{
-    color: #fff;
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -107,7 +108,7 @@ nav ul li {
  #about{
     padding-top: 300px ;
     padding-bottom: 200px;
-  color: #ababab ;
+  color: var(--secondary-color) ;
    
  }
  .shadow{
@@ -118,7 +119,7 @@ nav ul li {
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
-    background-color: #04141f;
+    background-color: var(--primary-color);
    
  }
  .shadow::before,
@@ -237,6 +238,7 @@ nav ul li {
 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
    grid-gap: 40px ;
    margin-top: 50px;
+   color:white ;
  }
 
  .services-list div{
@@ -341,7 +343,7 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
    padding: 14px 50px;
    border-radius: 6px;
    text-decoration: none;
-   color: white;
+   color: var(--secondary-color);
    transition: background 0.5s;
  }
  .btn:hover{
@@ -352,8 +354,13 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
  #contact{
   padding-top:  80px;
  }
- .row{
+ .raw{
    flex-direction: row;
+   display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: var(--primary-color);
  }
  .contact-left{
 
@@ -381,7 +388,7 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
    font-size:30px ;
    display: inline-block;
    margin-right: 15px;
-   color: #ababab;
+   color: var(--secondary-color);
    transition:transform 0.5s ;
  }
  .social-icons a:hover{
@@ -416,11 +423,13 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
  .copyright{
    width: 100%;
    text-align: center;
-   background: #262626;
+   background:#242424;
    font-weight: 300;
    height: 35px;
    padding: 10px;
    margin-top: 20px;
+   color: rgb(228, 228, 228);
+   
    
  }
  .copyright i{
@@ -434,6 +443,49 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   .fa-solid.fa-bars{
   display: none;
 }
+ #msg{
+  
+  color: #61b752;
+  margin-top: -10px;
+  padding-left: 20px;
+  display: block;
+ }
+ 
+.projects{
+  margin-top: 90px;
+}
+.logo{
+margin-top: 20px;
+margin-left: 10px;
+background-color: transparent;
+border: 2px solid white;
+border-radius: 50px;
+width: 80px;
+height: 50px;
+margin-right: 8px;
+cursor: pointer;
+}
+
+/* night mode */
+.fa-sun{
+  cursor: pointer;
+}
+.fa-moon{
+  cursor: pointer;
+}
+:root{
+  --primary-color:#04141f;
+  --secondary-color: #ffff;
+}
+.light-theme{
+--primary-color:#ffff;
+--secondary-color: #04141f;
+}
+#icon{
+ 
+  width: 22px;
+  position: absolute;
+  top: 33px;}
  @media  screen and (max-width:500px){
   #header{
     background-image: url(image/phone-background.png);
@@ -511,28 +563,9 @@ flex-basis: 100%;
 .copyright{
   font-size: 14px;
 }
- }
-
- #msg{
-  
-  color: #61b752;
-  margin-top: -10px;
-  padding-left: 20px;
-  display: block;
- }
- 
-.projects{
-  margin-top: 90px;
+#icon {
+  top: 25px;
+  right: 50px;
 }
-.logo{
-margin-top: 20px;
-margin-left: 10px;
-background-color: transparent;
-border: 2px solid white;
-border-radius: 50px;
-width: 80px;
-height: 50px;
-margin-right: 8px;
-cursor: pointer;
-}
+ }
 
